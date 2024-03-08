@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web IL</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Nunito:wght@800&family=Protest+Strike&display=swap" rel="stylesheet">
+    </head>
+
+    <body onload="zoom()">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: #d173e4 !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold font_custom  text-light" href="#home">
+                    <img src="img/logo.png" height="50" width="300">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" aria-current="page" href="#abstrak">Abstract</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" aria-current="page"
+                                href="#pendahuluan">Introduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" aria-current="page" href="#rencana"> Activity Plans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" aria-current="page" href="#hasil"> Activity Results</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" aria-current="page" href="#penutup">Closing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" aria-current="page" href="#daftar">Bibliography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light fw-bold" aria-current="page" href="#lampiran">Attachments</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+        <br>
+        <section id="home" class="mt-5">
+            <div class="container">
+                <div class="row  d-flex align-items-center">
+                    <div class="col-7">
+                        <h1> <img src="img/logo.png" height="100" width="600"> </h1>
+                        </h1>
+                        <br>
+                        <p>Hi Monzies!!
+                            We are from Group 3 Integrated Learning, Class 95, which includes the following members:<br>
+                            </p>
+                    </div>
+                    <div class="col-5">
+                        <img src="img/home.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </section>
+            <section>
+                    <div class="anggota">
+                        <div class="profile-card">
+                            <div class="image">
+                                <img src="img/mike.jfif">
+                            </div>
+                            <div class="caption">
+                            <h3>Brigitta Efra Nafara</h3>
+                            <p> IX-5/6</p>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <div class="image">
+                                <img src="img/sully.jfif">
+                            </div>
+                            <div class="caption">
+                            <h3>Clara Valencia</h3>
+                            <p>IX-5/8</p>
+                                
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <div class="image">
+                                <img src="img/boo.jfif">
+                            </div>
+                            <div class="caption">
+                            <h3>Emma Malaika Prayfuliva</h3>
+                            <p> IX-5/12
+                                
+                            </p>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <div class="image">
+                                <img src="img/esther.jfif">
+                            </div>
+                            <div class="caption">
+                            <h3>Esther Juditha Bukit</h3>
+                                <p>IX-5/13
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        <div class="profile-card">
+                            <div class="image">
+                                <img src="img/rtn.jfif">
+                            </div>
+                            <div class="caption">
+                            <h3>Theresia Ratna Esther </h3>
+                            <p>IX-5/30
+                                
+                            </p>
+                            <style>  
+                                .anggota{
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    align-items: center;
+                                    position: relative;
+                                }
+                                .profile-card{
+                                  position: relative;
+                                  width: 220px;
+                                  height: 220px;
+                                  background: #fff;
+                                  padding: 30px;
+                                  border-radius: 50%;
+                                  box-shadow: 0 0 22px #3336;
+                                  transition: .6s;
+                                  margin: 0 25px;
+                                }
+                                .profile-card:hover{
+                                  border-radius: 10px;
+                                  height: 260px;
+                                }
+                                .profile-card .image{
+                                  position: relative;
+                                  width: 100%;
+                                  height: 100%;
+                                  transition: .6s;
+                                  z-index: 99;
+                                }
+                                .profile-card:hover .image{
+                                  transform: translateY(-60px);
+                                }
+                                .image img{
+                                  width: 100%;
+                                  border-radius: 50%;
+                                  box-shadow: 0 0 22px #3336;
+                                  transition: .6s;
+                                }
+                                .profile-card:hover img{
+                                  border-radius: 10px;
+                                }
+                                .caption{
+                                  text-align: center;
+                                  transform: translateY(-80px);
+                                  opacity: 0;
+                                  transition: .6s;
+                                }
+                                .profile-card:hover .caption{
+                                  opacity: 1;
+                                }
+                                .caption h3{
+                                  font-size: 21px;
+                                }
+                                .caption p{
+                                  font-size: 16px;
+                                  color: #000000;
+                                  margin: 2px 0 9px 0;
+                                }
+                            
+                                </style>
+                        </div>
+            
+            </div>
+                </div>
+            </section>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#d173e4" fill-opacity="1"
+                d="M0,128L48,154.7C96,181,192,235,288,240C384,245,480,203,576,202.7C672,203,768,245,864,240C960,235,1056,181,1152,154.7C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <section id="abstrak" class="text-white p-5" style="background-color: #d173e4;">
+             <div class=" container">
+            <div class="row  text-center">
+                <div class="col-12 ">
+                    <h1> Abstract </h1>
+                </div>
+                <div class="card text-justify">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0 text-justify">
+                            <p>Integrated learning is a project in which students are put into groups and assigned work that are collaborations between multiple subjects. This year’s ninth-grade main IL project is running a booth for a day. Each group runs one booth, and each class holds a bazaar each day, depending on the schedule. Students are also required to open pre-orders, and some products can be sold after the bazaar if there are still some left. <b>Students are actively being pushed out of their comfort zone. Students are assigned work that requires planning, promoting, selling, and making reports about the bazaar.</b> Many studies have reported that most schools don't teach students about life skills for many reasons, including a rigid curriculum that all schools must follow. However, Saint Ursula Jakarta Junior High School has a solution for this. <b>So, Integrated Learning (IL) was established to solve this problem.</b> <br><br>
+                                We have made many preparations for the booth. We made the booth. “Monsters Inc." themed and called the booth “Monsters Mart.”. We made products such as our own designed t-shirts (two versions; black and white), our own designed tote bags, parfaits, cake pops, milo dino drinks, nachos, snack boxes, bracelets, and keychains. We also prepared a photo booth and charged customers to get Polaroid pictures. Apparently, there were a few products that were assigned to be selling foods that consist of biotechnology and another product of livestock or fishery products as its main ingredient. For biotechnology, we made parfaits made of fermented yogurt and cake pops made of homemade bread. <b>For livestock or fishery products, snack boxes were made.</b> A single snack box consists of chicken popcorn, french fries, and mozzarella sticks. <b>These two products were graded differently based on the subject teachers’ wants.</b> The snack box product will be made the morning before the bazaar, where the class gathers in the school kitchen. <br><br>
+                                We’ve encountered challenges throughout this project. One of them was having loads of pre-orders for the t-shirt product. We're so happy about it because our product was selling fast. However, we underestimated the number of pre-orders that we would get. Some t-shirt sizes and colors were not enough to fulfill all the pre-orders. Even so, we are still left with some t-shirts that no one bought.<br><br>
+                                As a solution, we made a public apology story post on Instagram, and thankfully no one complained. To order more of the lacking t-shirt products, the manufacturer stated that ordering 12 t-shirts at once was cheaper than buying the t-shirts one by one, and the number of t-shirts we have yet to deliver to buyers is less than 12. The cost of one t-shirt has a higher price than the price we sold these t-shirts for. So, we ordered 12 t-shirts at once. <b>As for the remaining t-shirts, it was solved by selling these t-shirts to friends and family outside of school. </b>After all that, we were ready to make our report. <br><br>
+                                Based on what had happened and what we’ve encountered, deep inside, there are values we could get. From the challenges we’ve encountered, we believe that teamwork is the most essential element of this project. Since the project starts with teamwork, it also needs to end with teamwork. By stating that every mistake and challenge we’ve encountered will all work out with the help of teamwork and communication,<b> As stated above, skills such as entrepreneurship, teamwork, marketing, collaboration, problem-solving, money management, pricing, customer service, and so many more were improved while doing the IL project. </b>
+                                </p>
+                        </blockquote>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#d173e4" fill-opacity="1"
+                d="M0,192L80,176C160,160,320,128,480,138.7C640,149,800,203,960,192C1120,181,1280,107,1360,69.3L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
+            </path>
+        </svg>
+        <section id="pendahuluan" class=" mb-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 ">
+                        <h1>Introduction</h1>
+                    </div>
+                    <div class="mt-3 col-lg-12 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <a href="pdf/pen.pdf" style="text-decoration: none;">
+                            <div class="card mt-1">
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                    <img src="img/pen.png" height="200" width="200">
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#d173e4" fill-opacity="1"
+                d="M0,160L48,181.3C96,203,192,245,288,240C384,235,480,181,576,181.3C672,181,768,235,864,218.7C960,203,1056,117,1152,85.3C1248,53,1344,75,1392,85.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+        <section id="rencana" class="text-white p-5" style="background-color: #d173e4;" box-shadow: 0 8px 28px #fffff>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 mb-3">
+                        <h1>Activity Plans</h1>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <a href="html/perencanaanproduk.html" target="_blank" style="text-decoration: none;">
+                            <div class="card mt-1" style="width: 18rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Product Planning</h5>
+                                    <h5 class="card-subtitle mb-2 text-body-secondary">
+                                        <img src="img/produk.png" height="200" width="200">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <a href="html/perencanaanpromosi.html" target="_blank" style="text-decoration: none;">
+                            <div class="card mt-1" style="width: 18rem;">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Promotion Planning</h5>
+                                    <h5 class="card-subtitle mb-2 text-body-secondary">
+                                        <img src="img/promosi.png" height="200" width="200">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
+                        <a href="pdf/pb.pdf" target="_blank" style="text-decoration: none;">
+                            <div class="card mt-1" style="width: 18rem;">
+                                <div class="card-body ">
+                                    <h5 class="card-title">Booth Planning</h5>
+                                    <h5 class="card-subtitle mb-2 text-body-secondary">
+                                        <img src="img/booth.png" height="200" width="200">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hasil" class="text-white p-5" style="background-color: #d173e4;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12  text-center">
+                        <h1>Activity Results</h1>
+                    </div>
+                    <div class="col-12">
+
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item ">
+                                <a class="nav-link active" id="menu1-tab" data-bs-toggle="tab" href="#menu1"
+                                    style="color:black !important;">Activity Implementation Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="menu2-tab" data-bs-toggle="tab" href="#menu2"
+                                    style="color:black !important;">Financial Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="menu3-tab" data-bs-toggle="tab" href="#menu3"
+                                    style="color:black !important;">Sales Statistics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="menu3-tab" data-bs-toggle="tab" href="#menu4"
+                                    style="color:black !important;">Activity Reflection</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="menu3-tab" data-bs-toggle="tab" href="#menu5"
+                                    style="color:black !important;">Process Video</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane fade" id="menu1">
+                                <h3>Activity Implementation Report</h3>
+                                <p>Our activity report on the day of the bazaar.</p>
+                                <a class="btn btn-light" target="_blank" href="pdf/pelaksanaan.pdf">View data</a>
+                            </div>
+                            <div class="tab-pane fade" id="menu2">
+                                <h3>Financial Report</h3>
+                                <p>Our financial report includes expenses for capital, amount sold, revenue, and profit.
+                                </p>
+                                <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQtTag16vsyPJkJJxyZUoUU15G8VGNmFuCvXORiVlCWisUyqnXsDGLLszjH-8leSot93aHjmlnyCXvR/pubhtml?widget=true&amp;headers=false" width="1100" height="500"></iframe>
+                            </div>
+                            <div class="tab-pane fade" id="menu3">
+                                <h3>Sales Statistics</h3>
+                                <p>Our sales statistics report.</p>
+                                <iframe src="https://docs.google.com/document/d/e/2PACX-1vQPzCfJXW3LZ5XkbylDzjotxTiU2g2LSNieej74HoYfbutJ-KOcdUu_hAnj0F7qmhjpTPmmSEnyRcFk/pub?embedded=true" width="1000" height="700"></iframe>                            
+                            </div>
+                            <div class="tab-pane fade" id="menu4">
+                                <h3>Activity Reflection</h3>
+                                <p>Our reflections on the Integrated Learning Bazaar.</p>
+                                   <a class="btn btn-light"target="_blank"  href="pdf/refleksi pkn (1).pdf.pdf">Group Reflection</a>
+                                   <a class="btn btn-light"target="_blank"  href="html/agama.html">Religious Reflection</a>
+                                    <a class="btn btn-light"target="_blank"  href="html/laporan gita.html">Gita's Reflection</a>
+                                    <a class="btn btn-light" target="_blank" href="pdf/refleksi_valen.pdf">Valen's Reflection</a>
+                                    <a class="btn btn-light" target="_blank" href="pdf/refleksi emma.pdf">Emma's Reflection</a>
+                                    <a class="btn btn-light"target="_blank"  href="pdf/refleksi esther.pdf">Esther's Reflection</a>
+                                    <a class="btn btn-light" target="_blank" href="pdf/refleksi ratna.pdf">Ratna's Reflection</a>
+                            </div>
+                            <div class="tab-pane fade" id="menu5">
+                                <h3>Process Video</h3>
+                                <p>Process video of our biotechnology and crafts for livestock and fisheries materials products.
+                                </p>
+                                    <iframe width="500" height="315" src="https://www.youtube.com/embed/mor16HdSbyQ?si=Nb9MGah0eFXsbVdl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <iframe width="500" height="315" src="https://www.youtube.com/embed/TaiBmNzr2mg?si=xcNGRk-LoObaN13k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#d173e4" fill-opacity="1"
+                d="M0,192L48,181.3C96,171,192,149,288,165.3C384,181,480,235,576,218.7C672,203,768,117,864,85.3C960,53,1056,75,1152,101.3C1248,128,1344,160,1392,176L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+            </path>
+        </svg>
+        <section id="penutup" class="mb-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 ">
+                        <h1>Closing</h1>
+                        <div class="row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Conclusion</h5>
+                                  <p class="card-text">Overall conclusion of our integrated learning bazaar.</p>
+                                  <a href="pdf/kesimpulan.pdf" target=_blank class="btn btn-outline-success">click here!</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Advice/Recommendation</h5>
+                                  <p class="card-text">Advise or recommendations for future projects.  </p>
+                                  <a href="html/saran.html" target=_blank class="btn btn-outline-success">click here!</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="daftar" class="mt-5 mb-5">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 ">
+
+                        <h1>Bibliography</h1>
+                    </div>
+                    <div class="col-12">
+                        <table class="table table-white">
+                            <tr>
+                                <td>1</td>
+                                <td>Hernawan, Asep Herry dan Novi Resmini, 2012 "Konsep Dasar dan Model-model
+                                    Pembelajaran Terpadu".  <a href="https://pustaka.ut.ac.id/lib/wp-content/uploads/pdfmk/PDGK4205-M1.pdf" target="_blank">https://pustaka.ut.ac.id/lib/wp-content/uploads/pdfmk/PDGK4205-M1.pdf,
+                                </a>diakses pada Kamis, 1 Februari 2024 pukul 13.47 WIB</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Dicastery for Promoting Integral Human Development, 2023. “Laudato Si’ Action Platform” <a href =https://laudatosiactionplatform.org/ target="_blank"> https://laudatosiactionplatform.org/</a>diakses pada Kamis, 1 Februari 2024. pukul 16.45 WIB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    Kumparan, 2022. “Menilik Urutan Penciptaan Menurut Alkitab Kejadian 1-7”
+                                    <a href=https://kumparan.com/berita-update/menilik-urutan-penciptaan-menurut-alkitab-kejadian-1-7-1xiNPov2lz2 target="_blank">https://kumparan.com/berita-update/menilik-urutan-penciptaan-menurut-alkitab-kejadian-1-7-1xiNPov2lz2</a> diakses pada Kamis, 1 Februari 2024 pukul 18.55 WIB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    Nelfira, Winda. 2023. “Tanah Longsor Landa Jagakarsa Jaksel, 2 Rumah Rusak Berat”
+                                    <a href=https://www.liputan6.com/news/read/5232081/tanah-longsor-landa-jagakarsa-jaksel-2-rumah-rusak-berat?page=2 target="_blank">https://www.liputan6.com/news/read/5232081/tanah-longsor-landa-jagakarsa-jaksel-2-rumah-rusak-berat?page=2</a> diakses pada Jumat, 2 Februari 2024 pukul 20.34 WIB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    Nurani, Sukma Kanthi. 2024. “Menelisik Banjir Jakarta Pekan Lalu: Apa Saja Pokok Sebabnya?” 
+                                    <a href=https://metro.tempo.co/read/1841156/menelisik-banjir-jakarta-pekan-lalu-apa-saja-pokok-sebabnya target="_blank">https://metro.tempo.co/read/1841156/menelisik-banjir-jakarta-pekan-lalu-apa-saja-pokok-sebabnya</a> diakses pada Sabtu, 3 Februari 2024 pukul 11.24 WIB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    Alkitab. Terjemahan baru. Yayasan Lembaga Sabda (YLSA), 2005. 
+                                    <a href=https://alkitab.sabda.org/home.php target="_blank">https://alkitab.sabda.org/home.php</a> diakses pada Kamis, 1 Februari 2024 pukul 18.55 WIB
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#d173e4" fill-opacity="1"
+                d="M0,0L40,42.7C80,85,160,171,240,197.3C320,224,400,192,480,197.3C560,203,640,245,720,240C800,235,880,181,960,176C1040,171,1120,213,1200,218.7C1280,224,1360,192,1400,176L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+            </path>
+        </svg>
+        <section id="lampiran" class="text-white p-5" style="background-color: #d173e4;">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 ">
+                        <h1>Attachments</h1>
+                    </div>
+
+                </div>
+
+                <div class="row flex-row flex-nowrap " style="overflow-x:auto;">
+                    <div class="col-2">
+                        <img src="img/1.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/2.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/3.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/4.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/5.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/10.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/7.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/8.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/13.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/14.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/17.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/18.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/11.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/15.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/19.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/23.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/25.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/26.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/16.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/21.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/22.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    <div class="col-2">
+                        <img src="img/9.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/6.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/12.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                    
+                    <div class="col-2">
+                        <img src="img/12.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/20.jpeg" class=" img-thumbnail" alt="">
+                        <img src="img/24.jpeg" class=" img-thumbnail" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous" type="text/javascript">
+                function zoom() {
+                    document.body.style.zoom = "90%" 
+                }</script>
+    </body>
+
+</html>
